@@ -10,77 +10,150 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/media.css">
 
-    <title>BT5</title>
+    <title>BT5 Class 2 HW</title>
   </head>
   <body>
-    <h1>Container</h1>
-    <div class="container">
-      <div class="box">container</div>
-    </div>
-
-    <h1>Container-fluid</h1>
-    <div class="Container-fluid">
-      <div class="box"></div>
-    </div>
-    <h1>Grid</h1>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <div class="box"></div>
-        </div>
-        <div class="col-lg-6">
-          <div class="box"></div>
-        </div>
-      </div>
-    </div>
-    <section>
+    <h1>Bootstrap layout</h1>
+    <section class="header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4">
-            <div class="box"></div>
+          <div class="col-md-2 col-sm-3 col-12">
+            <div class="box">1.1</div>
           </div>
-          <div class="col-lg-4">
-            <div class="box"></div>
+          <div class="col-md-7 col-sm-6 col-7">
+            <div class="box">1.2</div>
           </div>
-          <div class="col-lg-4">
-            <div class="box"></div>
+          <div class="col-md-3 col-sm-3 col-5">
+            <div class="box">1.3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-8 d-sm-block d-none">
+                <div class="box lime">2.1</div>
+              </div>
+              <div class="col-md-4">
+                <div class="box">2.2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-md-block d-none">
+            <div class="box red">3</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-4 col-sm-9">
+                <div class="box">4.1</div>
+              </div>
+              <div class="col-sm-3 d-md-none d-block">
+                <div class="box red">3</div>
+              </div>
+              <div class="col-md-8 col-sm-12">
+                <div class="box">4.2</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 d-md-block d-none">
+            <div class="box five">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bar d-md-none d-sm-block d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box">5</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="box">6.1</div>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h1>Flex</h1>
       <div class="container">
         <div class="row">
           <div class="col-lg">
-            <div class="box"></div>
+            <div class="box">Column1</div>
           </div>
           <div class="col-lg">
-            <div class="box"></div>
+            <div class="box">Column2</div>
           </div>
           <div class="col-lg">
-            <div class="box"></div>
-          </div>
-          <div class="col-lg">
-            <div class="box"></div>
-          </div>
-          <div class="col-lg">
-            <div class="box"></div>
+            <div class="box">Column3</div>
           </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h1>Grid & Flex</h1>
+      <h1>Equal Width</h1>
       <div class="container">
         <div class="row">
+          <div class="col-lg">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg">
+            <div class="box"></div>
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-lg">
+              <div class="box">1</div>
+            </div>
+            <div class="col-lg">
+              <div class="box">2</div>
+            </div>
+            <div class="col-lg">
+              <div class="box">3</div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <h1>Setting one column width</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg">
+            <div class="box"></div>
+          </div>
           <div class="col-lg-6">
+            <div class="box">6</div>
+          </div>
+          <div class="col-lg">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg">
             <div class="box"></div>
           </div>
           <div class="col-lg-5">
-            <div class="box"></div>
+            <div class="box">5</div>
           </div>
           <div class="col-lg">
             <div class="box"></div>
@@ -90,22 +163,221 @@
     </section>
 
     <section>
-      <h1>Offset class</h1>
+      <h1>Variable width content</h1>
       <div class="container">
-        <div class="row">
-          <div class="offset-lg-3 col-lg-6">
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-auto">
+            <div class="box">Variable width content</div>
+          </div>
+          <div class="col-lg-2">
             <div class="box"></div>
           </div>
-            </div>
+          <div class="col-lg-2">
+            <div class="box"></div>
+          </div>
         </div>
       </div>
     </section>
 
     <section>
-      <h1>Justify content center</h1>
+      <h1>Stacked to horizontal</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="box">8</div>
+          </div>
+          <div class="col-sm-4">
+            <div class="box">4</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <div class="box"></div>
+          </div>
+          <div class="col-sm">
+            <div class="box"></div>
+          </div>
+          <div class="col-sm">
+            <div class="box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Mix and match</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="box">8</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">4</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="box">4</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">4</div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box">4</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="box">6</div>
+          </div>
+          <div class="col-lg-6">
+            <div class="box">6</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Row columns</h1>
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Alignment</h1>
+      <div class="container">
+        <div class="row align-items-start">
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row align-items-center mh-400">
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row align-items-end">
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+          <div class="col">
+            <div class="box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Stair</h1>
+      <div class="container">
+        <div class="row mh-200">
+          <div class="col align-self-start">
+            <div class="box"></div>
+          </div>
+          <div class="col align-self-center">
+            <div class="box"></div>
+          </div>
+          <div class="col align-self-end">
+            <div class="box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Horizontal alignment</h1>
+      <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row justify-content-evenly">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h1>Column breaks</h1>
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-2">
+          <div class="col-lg-3">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-3">
+            <div class="box"></div>
+          </div>
+          <div class="w-100"></div>
+          <div class="col-lg-3">
             <div class="box"></div>
           </div>
           <div class="col-lg-3">
@@ -116,11 +388,17 @@
     </section>
 
     <section>
-      <h1>Align items center</h1>
+      <h1>Order classes</h1>
       <div class="container">
-        <div class="row align-items-center mh-400">
-          <div class="col-lg-2">
-            <div class="box"></div>
+        <div class="row">
+          <div class="col-lg">
+            <div class="box">1</div>
+          </div>
+          <div class="col-lg order-5">
+            <div class="box">Second in DOM, with a larger order</div>
+          </div>
+          <div class="col-lg order-1">
+            <div class="box">Third in DOM, with an order of 1</div>
           </div>
         </div>
       </div>
@@ -128,53 +406,202 @@
 
     <section>
       <div class="container">
-        <h1>h1 tag</h1>
-        <p class="h1">Asif</p>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4 offset-lg-4">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 offset-lg-3">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 offset-lg-3">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-7 offset-lg-3">
+            <div class="box"></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
+      <h1>Margin utilities</h1>
       <div class="container">
-        <h1>Fancy display heading</h1>
-        <h4>Subscribe to <small class="text-muted">my fb page</small></h4>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4 ms-auto">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 ms-lg-auto">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-3 ms-lg-auto">
+            <div class="box"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="box"></div>
+          </div>
+          <div class="col-lg-4 ms-auto">
+            <div class="box"></div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
-      <h1>Display-1</h1>
+      <h1>Standalone column classes</h1>
       <div class="container">
-        <h1 class="display-1">Personal</h1>
+        <div class="row">
+          <div class="col-lg-4 bg-light p-3 border">
+        <div class="box"></div>
+      </div>
+      <div class="col-sm-9 bg-light p-3 border">
+        <div class="box"></div>
+      </div>
+        </div>
       </div>
     </section>
 
     <section>
-      <h1>Lead</h1>
-      <div class="container">
-        <p class="lead text-center">Let me tell you something</p>
+      <h1>Clearfix</h1>
+      <div class="clearfix">
+  <img src="images/owl.jpg" class="col-md-6 float-md-end mb-3 ms-md-3" alt="owl">
+
+  <p>
+    A paragraph of placeholder text. We're using it here to show the use of the clearfix class. We're adding quite a few meaningless phrases here to demonstrate how the columns interact here with the floated image.
+  </p>
+
+  <p>
+    As you can see the paragraphs gracefully wrap around the floated image. Now imagine how this would look with some actual content in here, rather than just this boring placeholder text that goes on and on, but actually conveys no tangible information at. It simply takes up space and should not really be read.
+  </p>
+
+  <p>
+    And yet, here you are, still persevering in reading this placeholder text, hoping for some more insights, or some hidden easter egg of content. A joke, perhaps. Unfortunately, there's none of that here.
+  </p>
+</div>
+    </section>
+
+    <section>
+      <h1>Horizontal gutters</h1>
+      <div class="container px-4">
+        <div class="row gx-5">
+          <div class="col">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+          <div class="col">
+            <div class="p-3 border bg-light">Custom column padding</div>
+          </div>
+        </div>
       </div>
     </section>
 
     <section>
-      <h1>List inline</h1>
-      <div class="container">
-        <ul class="list-inline">
-          <li class="list-inline-item">Apple</li>
-          <li class="list-inline-item">Sugar</li>
-          <li class="list-inline-item">Pineapple</li>
-        </ul>
-      </div>
-    </section>
+      <h1>Vertical gutters</h1>
+      <div class="container overflow-hidden">
+  <div class="row gy-5">
+    <div class="col-6">
+      <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+    <div class="col-6">
+      <div class="p-3 border bg-light">Custom column padding</div>
+    </div>
+  </div>
+</div>
+</section>
 
-    <section>
-      <h1>Thumbnail picture</h1>
-      <div class="container">
-        <div class="img">
-        <img src="images/smile.jpg" class="rounded mx-auto d-block" alt="smile">
+<section>
+  <h1>Horizontal & vertical gutters</h1>
+  <div class="container">
+    <div class="row g-2">
+      <div class="col-6">
+        <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-light">Custom column padding</div>
+      </div>
+      <div class="col-6">
+        <div class="p-3 border bg-light">Custom column padding</div>
       </div>
     </div>
-    </section>
+  </div>
+</section>
 
+<section>
+  <h1>Row columns gutters</h1>
+  <div class="container">
+    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+      <div class="col">
+        <div class="p-3 border bg-light">Row columns</div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<section>
+  <h1>No gutters</h1>
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-lg-6 col-md-2 b">
+        <div class="box">6</div>
+      </div>
+      <div class="col-lg-6 col-md-2 b">
+        <div class="box">6</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section></section>
+
+    
 
 
  <!-- JS links -->
